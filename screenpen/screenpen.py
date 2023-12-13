@@ -449,8 +449,6 @@ class ScreenPenWindow(QMainWindow):
         self.sc_redo.activated.connect(self.redo)
         self.sc_toggle_menus = QShortcut(QKeySequence('Ctrl+1'), self)
         self.sc_toggle_menus.activated.connect(self.toggle_menus)
-        self.sc_quit_program = QShortcut(QKeySequence('Escape'), self)
-        self.sc_quit_program.activated.connect(self.quit_program)
 
     def _setCursor(self, cursor, hotx = None, hoty = None):
         if hotx is None:
