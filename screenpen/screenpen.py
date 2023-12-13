@@ -902,9 +902,6 @@ setattr(self, 'drawChart', drawChart)
 
 
     def mousePressEvent(self, event):
-        if event.button() == BUTTONS['right']:
-            sys.exit(0)
-
         if event.button() == BUTTONS['middle']:
             self.toggle_menus()
             
